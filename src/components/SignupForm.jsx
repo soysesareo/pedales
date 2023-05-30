@@ -40,7 +40,7 @@ const SignupForm = () => {
           aria-label="email's user"
           aria-describedby="basic-addon2"
         />
-        <Button variant="primary" id="button-addon2">
+        <Button variant="success" id="button-addon2">
           Enviar
         </Button>
       </InputGroup>

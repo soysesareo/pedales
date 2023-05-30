@@ -100,9 +100,10 @@ const Contacto = () => {
       </div> */}
       {/* <br /><br /> */}
       <div className="contacto-formulario">
-        <div className="container pt-3 py-3">
+        <div className="container ">
           {/* <h2 className="mb-3">React Contact Form Component Example</h2> */}
-          <h5 style={{ color: '#A72C38', textAlign: 'center' }}>Déjanos tu mensaje</h5>
+          <h5 style={{ color: '#A72C38', textAlign: 'center' }}>Somos la comunidad de los pedales usados</h5>
+          <h6 style={{ color: '#A72C38', textAlign: 'center' }}>Déjanos tu mensaje</h6>
           <h6 style={{ color: '#A72C38', textAlign: 'center' }}>Te contactaremos a la brevedad posible</h6>
           <br />
           <form onSubmit={onSubmit}>

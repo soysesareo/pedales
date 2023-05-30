@@ -51,6 +51,9 @@ const Navegacion = () => {
             <LinkContainer to="/contacto">
               <Nav.Link >Contacto</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/favoritos">
+              <Nav.Link >Favoritos</Nav.Link>
+            </LinkContainer>
 
             {
               user ? (

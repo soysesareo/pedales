@@ -11,6 +11,7 @@ import Contacto from './pages/Contacto'
 import Login from './pages/Login'
 import Registro from './pages/Registro'
 import Dashboard from './pages/Dashboard'
+import Favoritos from './pages/Favoritos'
 import Buscador from './pages/Buscador'
 
 import Header from './components/Header'
@@ -47,6 +48,7 @@ function App() {
           path='/dashboard'
           element={user ? <Dashboard /> : <Login />} />
         <Route path='/logout' element={<Logout />} />
+        <Route path='/favoritos' element={<Favoritos />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Section />
