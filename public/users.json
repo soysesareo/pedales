@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Sesareo",
+    "email": "gmail@holasesareo.cl",
+    "password": "123",
+    "avatarSRC": "https://i.pinimg.com/originals/c0/76/bf/c076bf4d471586359245e2970ec53776.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Sesareo",
+    "email": "hola@sesareo.cl",
+    "password": "123",
+    "avatarSRC": "https://i.pinimg.com/originals/c0/76/bf/c076bf4d471586359245e2970ec53776.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Cabeza",
+    "email": "cabeza@sesareo.cl",
+    "password": "123",
+    "avatarSRC": "https://i.pinimg.com/originals/c0/76/bf/c076bf4d471586359245e2970ec53776.jpg"
+  }
+]
