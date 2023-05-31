@@ -32,7 +32,11 @@ export default function ProductProvider({ children }) {
   const [favorites, setFavorites] = useState([]);
   const addFavorites = (pedal) => {
     setFavorites([...favorites, pedal]);
+  };
 
+ const deleteFavorites = (id) => {
+      const newFavorites = favorites.filter((pedal) => pedal.id !== id);
+      setFavorites(newFavorites);
   };
 
   const [user, setUser] = useState(null);
@@ -114,7 +118,7 @@ export default function ProductProvider({ children }) {
 
 
   return (
-    <ProductContext.Provider value={{ user: user, users, favorites, addFavorites, login, register, busqueda, setBusqueda, pedales, setPedales, compras, setCompras, addPedal, clientes, setClientes, usuariosFiltrados: usuariosFiltrados, setUsuariosFiltrados, search: search, setSearch }}>
+    <ProductContext.Provider value={{ user: user, users, favorites, addFavorites, deleteFavorites, login, register, busqueda, setBusqueda, pedales, setPedales, compras, setCompras, addPedal, clientes, setClientes, usuariosFiltrados: usuariosFiltrados, setUsuariosFiltrados, search: search, setSearch }}>
       {children}
     </ProductContext.Provider>
 

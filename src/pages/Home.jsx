@@ -13,7 +13,7 @@ import Filtros from './Filtros';
 
 
 const Home = () => {
-  const { pedales, busqueda, searchPedal, setPedales, addPedal, addFavorites } = useProductContext(ProductContext);
+  const { pedales, busqueda, searchPedal, setPedales, addPedal, favorites, addFavorites } = useProductContext(ProductContext);
   /* const handleAddPedal = (pedales) => {
     addPedal(pedales);
     setPedalesFiltrados(pedales);
@@ -92,6 +92,7 @@ const Home = () => {
                     <Button
                       variant="success"
                       onClick={() => addFavorites(pedal)}
+                      disabled={favorites.some((item) => item.id === pedal.id)}
                     >Favoritos 
                     </Button>
                   {/* </Link> */}

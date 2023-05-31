@@ -8,7 +8,7 @@ import { Image } from 'react-bootstrap';
 
 const Favoritos = () => {
 
-  const { pedales, favorites } = useProductContext(ProductContext);
+  const { pedales, favorites, deleteFavorites } = useProductContext(ProductContext);
   console.log(favorites);
   console.log(pedales);
   return (
@@ -25,8 +25,10 @@ const Favoritos = () => {
               <Card.Title>{pedal.brand} {pedal.name}</Card.Title>
               <Card.Text>{pedal.description}</Card.Text>
               <Card.Text>Precio: ${pedal.price}</Card.Text>
-              
-              <Button variant='secondary'>Eliminar</Button>
+              <Button
+                variant='secondary'
+                onClick={() => deleteFavorites(pedal.id)}
+              >Eliminar</Button>
             </div>
           </Card>
         ))
