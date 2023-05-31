@@ -252,7 +252,42 @@ align-items: center;
 /* Fin Componente Newsletter */
 
 
+/* Componente Favoritos */
+
+/* sólo el color de fondo */
+.favoritos {
+  background-color: #97A35C;
+  padding-bottom: 2.5%;
+}
+
+.favoritos-tarjetas {
+  background-color: #97A35C;
+  display: flex;
+  flex-direction: row;
+  margin: 1% 6% 1.5% 6%;
+
+}
+
+.favoritos-modelo-precio {
+  padding: 0.5% 1.5% 2% 1.5%;
+  text-align: justify;
+  /* background-color: #97A35C; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+*/
+/* .favoritos-imagen, .favoritos-modelo-precio {
+  background-color: #97A35C;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* Fin Componente Favoritos */
+
+
 /* Componente Contacto */
+/* NO funciona */
 .contacto-formulario {
   /* padding: 0 15% 0 15%; */
   padding: 2% 15% 3% 15%;
@@ -263,7 +298,21 @@ align-items: center;
   background-size: cover; */
 }
 
+.contacto-container {
+  padding: 2% 15% 3% 15%;
+  background-color: #97A35C;
+  max-width: 100%;
+}
+
 /* Fin Componente Contacto */
+
+
+/* Componente Detalles */
+/* .detalles {
+  
+} */
+
+/* Fin Componente Detalles */
 
 
 /* Componente Clientes */
@@ -487,6 +536,22 @@ height: 100px;
     display: none;
   }
 
+  .favoritos-imagen {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+
+  }
+
+  /* revisar, no funciona */
+  .favoritos,
+  .favoritos-tarjetas,
+  .favoritos-modelo-precio {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    text-align: justify;
+  }
 
 }
 
@@ -542,6 +607,30 @@ height: 100px;
   .busquedaFiltro {
     display: flex;
     flex-direction: column;
+  }
+
+  /* revisar, no funciona */
+  .favoritos,
+  .favoritos-tarjeta {
+    padding: 0 5% 3% 0;
+    
+  }
+
+  */ .favoritos-imagen {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+
+  }
+
+  /* revisar, no funciona */
+  .favoritos,
+  .favoritos-tarjetas,
+  .favoritos-modelo-precio {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    text-align: justify;
   }
 }
 

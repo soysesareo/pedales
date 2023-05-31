@@ -99,8 +99,8 @@ const Contacto = () => {
         </form>
       </div> */}
       {/* <br /><br /> */}
-      <div className="contacto-formulario">
-        <div className="container ">
+      <div className="contacto-formulario" >
+        <div className="contacto-container" >
           {/* <h2 className="mb-3">React Contact Form Component Example</h2> */}
           <h5 style={{ color: '#A72C38', textAlign: 'center' }}>Somos la comunidad de los pedales usados</h5>
           <h6 style={{ color: '#A72C38', textAlign: 'center' }}>Déjanos tu mensaje</h6>

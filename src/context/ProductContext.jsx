@@ -29,6 +29,11 @@ export default function ProductProvider({ children }) {
     getUsers();
   }, []);
 
+  const [favorites, setFavorites] = useState([]);
+  const addFavorites = (pedal) => {
+    setFavorites([...favorites, pedal]);
+
+  };
 
   const [user, setUser] = useState(null);
 
@@ -55,10 +60,10 @@ export default function ProductProvider({ children }) {
 
 
   /* No utilicé localStorage, así que reemplacé el logout */
-  const logout = () => { };
+  /* const logout = () => { }; */
 
 
-/* hook para busqueda */
+  /* hook para busqueda */
   const [pedales, setPedales] = useState([]);
 
   const getPedales = async () => {
@@ -109,7 +114,7 @@ export default function ProductProvider({ children }) {
 
 
   return (
-    <ProductContext.Provider value={{ user: user, users, login, register, busqueda, setBusqueda, pedales, setPedales, compras, setCompras, addPedal, clientes, setClientes, usuariosFiltrados: usuariosFiltrados, setUsuariosFiltrados, search: search, setSearch }}>
+    <ProductContext.Provider value={{ user: user, users, favorites, addFavorites, login, register, busqueda, setBusqueda, pedales, setPedales, compras, setCompras, addPedal, clientes, setClientes, usuariosFiltrados: usuariosFiltrados, setUsuariosFiltrados, search: search, setSearch }}>
       {children}
     </ProductContext.Provider>
 

@@ -1,7 +1,8 @@
 import React from 'react'
-import { ProductContext, useProductContext } from '../context/ProductContext'
-import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { ProductContext, useProductContext } from '../context/ProductContext'
+
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Image } from 'react-bootstrap';
@@ -12,7 +13,7 @@ import Filtros from './Filtros';
 
 
 const Home = () => {
-  const { pedales, busqueda, searchPedal, setPedales, addPedal } = useProductContext(ProductContext);
+  const { pedales, busqueda, searchPedal, setPedales, addPedal, addFavorites } = useProductContext(ProductContext);
   /* const handleAddPedal = (pedales) => {
     addPedal(pedales);
     setPedalesFiltrados(pedales);
@@ -87,14 +88,21 @@ const Home = () => {
                 </Card.Text>
 
                 <div className="botones-favoritos">
-                  <Link className="boton-detalles" to={`/detalles `}>
+                  {/* <Link className="boton-detalles" to={`/detalles `}> */}
                     <Button
                       variant="success"
-                      onClick={() => handleAddPedal(pedales)}
-                    >Detalles
+                      onClick={() => addFavorites(pedal)}
+                    >Favoritos 
                     </Button>
-                  </Link>
-                  <Image className="corazon-favorito" src="/heart-svgrepo-com.svg" fluid rounded />
+                  {/* </Link> */}
+                  
+                  {/* <Image
+                    className="corazon-favorito"
+                    src="/heart-svgrepo-com.svg"
+                    fluid rounded 
+                    onClick={() => addFavorites(pedal)}
+                    /> */}
+                  
                   <Link className="boton-comprar" to={`/compras `} >
                     <Button
                       variant="success"

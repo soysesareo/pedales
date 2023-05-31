@@ -12,7 +12,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 const Navegacion = () => {
 
-  const { user } = useProductContext(ProductContext);
+  const { user, favorites } = useProductContext(ProductContext);
 
 
   return (
@@ -52,8 +52,9 @@ const Navegacion = () => {
               <Nav.Link >Contacto</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/favoritos">
-              <Nav.Link >Favoritos</Nav.Link>
+              <Nav.Link >Favoritos ({favorites.length}) </Nav.Link>
             </LinkContainer>
+              
 
             {
               user ? (
