@@ -119,13 +119,13 @@ export default function ProductProvider({ children }) {
   /* Implementación Ordenar */
 
 
-  const [value,setValue]=useState('');
-  const handleSelect=(e)=>{
+  const [value, setValue] = useState('');
+  const handleSelect = (e) => {
     console.log(e);
     setValue(e)
   }
 
-  
+
   function ordenar(e) {
     switch (e) {
       case "menorprecio":
@@ -177,6 +177,18 @@ export default function ProductProvider({ children }) {
         setPedales([...pedales]);
         break;
       default:
+      case "default":
+        pedales.sort((a, b) => {
+          if (a.id == b.id) {
+            return 0;
+          }
+          if (a.id < b.id) {
+            return -1;
+          }
+          return 1
+        })
+        setPedales([...pedales]);
+        break;
         console.log(`Sorry, we are out of ${e}.`);
     }
   }

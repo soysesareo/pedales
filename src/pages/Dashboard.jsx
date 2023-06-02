@@ -16,6 +16,14 @@ const Dashboard = () => {
     <div className='dashboard'>
       <h5 style={{ color: "#A72C38"}}>Tablero de Opciones</h5>
       <h6>{user ? "Usuario existe" : "Usuario no existe"}</h6>
+
+
+
+      <div className="dashboardUsuario">
+        <h6>Estos son tus datos {user.name}</h6>
+        
+      </div>
+      
       <br /><br />
       <Link className="logout-boton" to={`/Login `} >
         <Button

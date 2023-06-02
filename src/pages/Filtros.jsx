@@ -123,7 +123,7 @@ const Filtros = () => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
           onChange={(e) => { ordenar(e.target.value); }}>
-          <option value="default">Ordenar pedales por desde Filtros</option>
+         <option value="default" >Ordenar pedales </option>
           <option value="menorprecio">Precio: menor a mayor</option>
           <option value="mayorprecio">Precio: mayor a menor</option>
           <option value="marcaasc">Marcas: ascendente</option>
