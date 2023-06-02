@@ -34,7 +34,7 @@ const Favoritos = () => {
         ))
       }
       <br /><br />
-      {favorites.length === 0 && <h6 style={{ color: '#A72C38', textAlign: 'center' }}>...aunque aún no tienes ninguno</h6>}
+      {favorites.length === 0 && <h6 style={{ color: '#A72C38', textAlign: 'center' }}>...aunque no tienes ninguno</h6>}
 
 
     </div>

@@ -34,9 +34,9 @@ export default function ProductProvider({ children }) {
     setFavorites([...favorites, pedal]);
   };
 
- const deleteFavorites = (id) => {
-      const newFavorites = favorites.filter((pedal) => pedal.id !== id);
-      setFavorites(newFavorites);
+  const deleteFavorites = (id) => {
+    const newFavorites = favorites.filter((pedal) => pedal.id !== id);
+    setFavorites(newFavorites);
   };
 
   const [user, setUser] = useState(null);
@@ -61,6 +61,8 @@ export default function ProductProvider({ children }) {
 
 
   const [busqueda, setBusqueda] = useState("");
+
+
 
 
   /* No utilicé localStorage, así que reemplacé el logout */
@@ -98,8 +100,6 @@ export default function ProductProvider({ children }) {
 
 
 
-
-
   /* Implementacion Tarjetas Clientes */
   const [clientes, setClientes] = useState([]);
   const getClientes = async () => {
@@ -116,9 +116,76 @@ export default function ProductProvider({ children }) {
 
   /* Implementación Buscador */
 
+  /* Implementación Ordenar */
+
+
+  const [value,setValue]=useState('');
+  const handleSelect=(e)=>{
+    console.log(e);
+    setValue(e)
+  }
+
+  
+  function ordenar(e) {
+    switch (e) {
+      case "menorprecio":
+        pedales.sort((a, b) => {
+          if (a.price == b.price) {
+            return 0;
+          }
+          if (a.price < b.price) {
+            return -1;
+          }
+          return 1
+        })
+        setPedales([...pedales]);
+        break;
+      case "mayorprecio":
+        pedales.sort((a, b) => {
+          if (a.price == b.price) {
+            return 0;
+          }
+          if (a.price > b.price) {
+            return -1;
+          }
+          return 1
+        })
+        setPedales([...pedales]);
+        break;
+      case "marcaasc":
+        pedales.sort((e, f) => {
+          if (e.brand.toLowerCase() == f.brand.toLowerCase()) {
+            return 0;
+          }
+          if (e.brand.toLowerCase() < f.brand.toLowerCase()) {
+            return -1;
+          }
+          return 1
+        })
+        setPedales([...pedales]);
+        break;
+      case "marcades":
+        pedales.sort((e, f) => {
+          if (e.brand.toLowerCase() == f.brand.toLowerCase()) {
+            return 0;
+          }
+          if (e.brand.toLowerCase() > f.brand.toLowerCase()) {
+            return -1;
+          }
+          return 1
+        })
+        setPedales([...pedales]);
+        break;
+      default:
+        console.log(`Sorry, we are out of ${e}.`);
+    }
+  }
+
+
+
 
   return (
-    <ProductContext.Provider value={{ user: user, users, favorites, addFavorites, deleteFavorites, login, register, busqueda, setBusqueda, pedales, setPedales, compras, setCompras, addPedal, clientes, setClientes, usuariosFiltrados: usuariosFiltrados, setUsuariosFiltrados, search: search, setSearch }}>
+    <ProductContext.Provider value={{ user: user, users, ordenar, handleSelect, value, setValue, favorites, addFavorites, deleteFavorites, login, register, busqueda, setBusqueda, pedales, setPedales, compras, setCompras, addPedal, clientes, setClientes, usuariosFiltrados: usuariosFiltrados, setUsuariosFiltrados, search: search, setSearch }}>
       {children}
     </ProductContext.Provider>
 

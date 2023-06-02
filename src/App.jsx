@@ -25,7 +25,7 @@ function App() {
   /* const [count, setCount] = useState(0) */
 
   const { user } = useProductContext(ProductContext);
-  console.log(user);
+  /* console.log(user); */
 
   return (
     <div className="App">

@@ -28,7 +28,7 @@ const Login = () => {
       setPassword("");
       return navigate('/dashboard')
     }
-    alert('Datos incorrectos, vuelva a intentarlo')
+    alert('Tiene algunos campos vacíos, vuelva a intentarlo')
   };
 
 

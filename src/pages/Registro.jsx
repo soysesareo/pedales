@@ -8,7 +8,7 @@ import Alert from 'react-bootstrap/Alert';
 
 const Registro = () => {
 
-  const { register } = useProductContext(ProductContext);
+  const { user, register } = useProductContext(ProductContext);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -17,6 +17,8 @@ const Registro = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+
+    if (user)
     register(
       {
         id: Date.now(),
@@ -25,8 +27,23 @@ const Registro = () => {
         password,
         repassword
       }
-    )
+      )
+      alert('Tiene algunos campos vacíos, vuelva a intentarlo')
+
   };
+
+  /* const [formStatus, setFormStatus] = React.useState('Registrar')
+  const onSubmit = (e) => {
+    e.preventDefault()
+    setFormStatus('Submitting...')
+    const { name, email, message } = e.target.elements
+    let conFom = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    }
+    console.log(conFom)
+  } */
 
   return (
     <div>
@@ -84,7 +101,8 @@ const Registro = () => {
             Recuerda que nunca compartiremos tu información
           </Form.Text>
           <Button variant="secondary" type="submit">
-            Registrarme
+            {/* {formStatus} */}
+            Registrar
           </Button>
         </div>
 

@@ -10,7 +10,7 @@ import { ProductContext, useProductContext } from '../context/ProductContext'
 
 const Buscador = () => {
 
-  const { pedales, setBusqueda } = useProductContext(ProductContext);
+  const { pedales, setBusqueda, ordenar } = useProductContext(ProductContext);
   console.log(pedales);
 
   /*  const [searchPedal, setSearchPedal] = useState(""); */
@@ -28,6 +28,7 @@ const Buscador = () => {
             type="search"
             placeholder="Escribe tu búsqueda..."
             aria-describedby="basic-addon2"
+            
             /* value={searchPedal} */
             onChange={handleInputBusqueda}
 
