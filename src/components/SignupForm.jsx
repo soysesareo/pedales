@@ -16,6 +16,25 @@ const SignupForm = () => {
     },
   });
 
+  (() => {
+    'use strict'
+  
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+
+ 
+
   return (
     <>
       {/* <p>Newsletter con Formik</p> */}
@@ -39,8 +58,11 @@ const SignupForm = () => {
           placeholder="Ingrese su email"
           aria-label="email's user"
           aria-describedby="basic-addon2"
+          onChange={formik.handleChange}
+          value={formik.values.email}
+          required
         />
-        <Button /* type="submit" */ variant="success" id="button-addon2">
+        <Button type="submit" variant="success" id="button-addon2">
           Enviar
         </Button>
       </InputGroup>
