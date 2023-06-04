@@ -28,8 +28,7 @@ const Registro = () => {
         repassword
       }
       )
-      alert('Tiene algunos campos vacíos, vuelva a intentarlo')
-
+      alert('Tiene algunos campos vacíos, vuelva a intentarlo');
   };
 
   /* const [formStatus, setFormStatus] = React.useState('Registrar')

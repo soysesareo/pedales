@@ -1,7 +1,5 @@
 import { useContext, useState, useEffect } from "react";
 import { createContext } from "react";
-import Detalles from "../pages/Detalles";
-
 
 export const ProductContext = createContext()
 
@@ -126,6 +124,11 @@ export default function ProductProvider({ children }) {
   }
 
 
+  /*  agregar pedales */
+  const createProduct = pedal => {
+    setPedales([...pedales, pedal])
+  }
+
   function ordenar(e) {
     switch (e) {
       case "menorprecio":
@@ -197,7 +200,7 @@ export default function ProductProvider({ children }) {
 
 
   return (
-    <ProductContext.Provider value={{ user: user, users, ordenar, handleSelect, value, setValue, favorites, addFavorites, deleteFavorites, login, register, busqueda, setBusqueda, pedales, setPedales, compras, setCompras, addPedal, clientes, setClientes, usuariosFiltrados: usuariosFiltrados, setUsuariosFiltrados, search: search, setSearch }}>
+    <ProductContext.Provider value={{ user: user, users, createProduct, ordenar, handleSelect, value, setValue, favorites, addFavorites, deleteFavorites, login, register, busqueda, setBusqueda, pedales, setPedales, compras, setCompras, addPedal, clientes, setClientes, usuariosFiltrados: usuariosFiltrados, setUsuariosFiltrados, search: search, setSearch }}>
       {children}
     </ProductContext.Provider>
 

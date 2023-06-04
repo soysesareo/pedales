@@ -427,10 +427,38 @@ height: 100px;
 
 .dashboard {
   background-color: #97A35C;
-  color: #A72C38;
+  /* color: #A72C38; */
+  /* text-align: center; */
+  /* padding: 2% 15% 3% 15%; */
+}
+
+.dashboardCabecera {
   text-align: center;
   padding: 2% 15% 3% 15%;
 }
+
+.dashboardUsuarioProductos{
+  margin-left: 3%;
+}
+
+.dashboardAgregarProductos {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 15% 3% 15%;
+  /* width: 75%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 35px; */
+}
+
+.dashboardBotonEnviar {
+  margin-top: 1%;
+  width: 15%;
+}
+
+
 
 /* Fin Componente Dashboard */
 
@@ -613,7 +641,7 @@ height: 100px;
   .favoritos,
   .favoritos-tarjeta {
     padding: 0 5% 3% 0;
-    
+
   }
 
   */ .favoritos-imagen {
