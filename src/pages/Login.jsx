@@ -23,13 +23,30 @@ const Login = () => {
     e.preventDefault();
     console.log(email, password);
     const user = await login(email, password);
-    if (user) {
+   /*  if (user) */ {
       setEmail("");
       setPassword("");
       return navigate('/dashboard')
     }
-    alert('Tiene algunos campos vacíos, vuelva a intentarlo')
+    /* alert('Tiene algunos campos vacíos, vuelva a intentarlo') */
   };
+
+  (() => {
+    'use strict'
+  
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
 
 
   return (
@@ -51,6 +68,7 @@ const Login = () => {
             placeholder="Ingrese su correo electrónico"
             value={email}
             onChange={e => setEmail(e.target.value)}
+            required
           />
           <Form.Text className="text-muted">
             Recuerda que nunca compartiremos tu información
@@ -64,6 +82,7 @@ const Login = () => {
             placeholder="Ingrese su contraseña"
             value={password}
             onChange={e => setPassword(e.target.value)}
+            required
           />
         </Form.Group>
 

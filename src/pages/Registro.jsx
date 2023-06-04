@@ -17,8 +17,7 @@ const Registro = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
-    if (user)
+    /* if (user) */
     register(
       {
         id: Date.now(),
@@ -27,12 +26,12 @@ const Registro = () => {
         password,
         repassword
       }
-      )
-      alert('Tiene algunos campos vacíos, vuelva a intentarlo');
+    )
+    /* alert('Tiene algunos campos vacíos, vuelva a intentarlo'); */
   };
 
-  /* const [formStatus, setFormStatus] = React.useState('Registrar')
-  const onSubmit = (e) => {
+  /* const [formStatus, setFormStatus] = React.useState('Registrar') */
+  /* const onSubmit = (e) => {
     e.preventDefault()
     setFormStatus('Submitting...')
     const { name, email, message } = e.target.elements
@@ -42,7 +41,26 @@ const Registro = () => {
       message: message.value,
     }
     console.log(conFom)
-  } */
+  }  */
+
+  (() => {
+    'use strict'
+  
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+
+
 
   return (
     <div>
@@ -63,6 +81,7 @@ const Registro = () => {
             placeholder="Ingrese su nombre de usuaria(o)"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -72,6 +91,7 @@ const Registro = () => {
             placeholder="Ingrese su correo electrónico"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </Form.Group>
 
@@ -82,6 +102,7 @@ const Registro = () => {
             placeholder="Ingrese su contraseña"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
         </Form.Group>
 
@@ -92,6 +113,7 @@ const Registro = () => {
             placeholder="Repita su contraseña"
             value={repassword}
             onChange={(e) => setRePassword(e.target.value)}
+            required
           />
         </Form.Group>
 
