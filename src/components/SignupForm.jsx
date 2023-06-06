@@ -14,7 +14,7 @@ const SignupForm = () => {
     onSubmit: values => {
       alert(JSON.stringify(values, null, 2));
     },
-  });
+  }); 
 
   (() => {
     'use strict'

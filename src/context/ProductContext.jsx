@@ -84,7 +84,8 @@ export default function ProductProvider({ children }) {
     {
       /* brand: "Boss", */
       price: "$49990",
-      name: "DS-1",
+      name: "DS-111",
+      
 
     }
   ]);
