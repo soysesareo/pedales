@@ -7,7 +7,7 @@
     "img": "assets/img/boss-ds-1-40th-anniversary_300-1.jpg",
     "type": "Distorsion Cobain",
     "video": "https://youtu.be/RPk0moimCUI",
-    "description": "Un efecto de distorsión que no puede faltar en ninguna pedalera. Ideal para quienes quieren explorar los caminos de rock en sus diversas variedades con las confienza de una fabricante único y con historia como Boss. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "El DS-1 Distortion es un auténtico icono en el mundo de los efectos de guitarra. Presentado en 1978, el primer pedal de distorsión de BOSS definió un sonido nuevo y atrevido, con un ataque agresivo y un sustain fluido que ha enganchado a generaciones de músicos. El DS-1 es el pedal compacto BOSS más vendido de todos los tiempos, y su diseño original sigue inspirando la creación de música fantástica en todo el mundo.",
     "liked": "false"
   },
   {
@@ -17,7 +17,7 @@
     "name": "RV-5",
     "img": "assets/img/boss-rv-5_300-2.jpg",
     "type": "Digital Reverb",
-    "description": "Una reverb versatil y fácil de manejar como pocas. Incluye variedades como Hall, Plate y Room. Repellendus ipsum aperiam veritatis quidem porro nemo. Ipsam Boss quis pariatur accusantium amet consequuntur. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "El RV-5 ofrece seis de las mejores reverberaciones de la historia de BOSS — en Estereo. Esto hace posible que se conecte después de otros pedales que presenten salidas estereo como en los BF-3, PS-5, CE-5, CH-1, CEB-3, SYB-3, SYB-5, etc. Entre las nuevas reverberaciones se incluyen la emulación convincente de resortes y la reverberación de alta calidad de compuerta o “gate”. Se pueden obtener sonidos de reverberación más espaciosa usando el nuevamente desarrollado modo “Modulate”. Y gracias a sus entradas duales, el RV-5 incluso funciona de manera genial para los Tecladistas.",
     "liked": "false"
   },
   {
@@ -27,7 +27,7 @@
     "name": "Boost",
     "img": "assets/img/teisco-boost-pedal_300-3.jpg",
     "type": "Booster",
-    "description": "Lorem ipsum dolor boost teisco sit amet consectetur, adipisicing elit. Incidunt autem necessitatibus voluptatum corrupti tenetur provident est, blanditiis eligendi dolores esse magnam, repellendus ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "Al igual que el preamplificador clásico en el que está basado, el Teisco Boost está cargado con un transistor de efecto de campo (FET) para un clipeo más suave y orgánico. El switch de perfil del EQ también brinda la capacidad de ajuste adicional cuando la necesitas. Ya sea que necesites un buffer para mejorar el sonido o un “empujón” adicional para tu distorsión y amplificadores, el Teisco Boost lo abarca todo.",
     "liked": "false"
   },
   {
@@ -37,7 +37,7 @@
     "name": "Chorus",
     "img": "assets/img/supro-chorus-1643960584693_300-4.jpg",
     "type": "Analog Chorus Cobain",
-    "description": "Lorem ipsum dolor sit chorus Supro amet consectetur, adipisicing elit. Incidunt autem necessitatibus voluptatum corrupti tenetur provident est, blanditiis eligendi dolores esse magnam, repellendus ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "The Supro Chorus is an all-analog, full-stereo modulation stompbox that uses a pair of genuine MN3007 Bucket Brigade IC chips to deliver the thickest, most luscious Chorus effect possible in pedal form, all while maintaining exceptional headroom. In addition to Speed and Depth knobs, the Supro Chorus features a Time control that increases the delay time on one side of the stereo field while shortening the delay time on the other side.",
     "liked": "false"
   },
   {
@@ -47,7 +47,7 @@
     "name": "Fuzz",
     "img": "assets/img/teisco-fuzz-pedal_300-5.jpg",
     "type": "Fuzz",
-    "description": "Lorem ipsum dolor sit fuzz Teisco amet consectetur, adipisicing elit. Incidunt autem necessitatibus voluptatum corrupti tenetur provident est, blanditiis eligendi dolores esse magnam, repellendus ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "The Teisco Fuzz makes use of a traditional silicon circuit and adds a switchable upper octave to give you an unbelievably wide scale of wild '70s sounds ranging from blistering lead tones to gnarly textures to synth-like overtones. This effects pedal has a housing made of zinc with rounded corners and removable feet so it'll fit easily onto your pedalboard.",
     "liked": "false"    
   },
 {
@@ -57,7 +57,7 @@
     "name": "Ego",
     "img": "assets/img/wampler-ego-compressor-1652711127151_300-6.jpg",
     "type": "Compresor",
-    "description": "Lorem ipsum dolor sit amet consectetur compresor, adipisicing elit. Incidunt autem necessitatibus voluptatum corrupti tenetur provident est, blanditiis eligendi dolores esse magnam, repellendus ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "Ampliamente considerado como el estándar de la industria de pedales de compresión para guitarra, el Ego Compressor ofrece un nuevo nivel de control para lo que esperan y necesitan los guitarristas de hoy. El concepto tras este pedal es asegurar que la dinámica de ejecución pudiera ser retenida y que el compresor no alterara el sonido en lo absoluto.",
     "liked": "false"
   },
 {
@@ -67,7 +67,7 @@
     "name": "EchoVerb",
     "img": "assets/img/mooer-echoverb-front-300x300-7.jpg",
     "type": "Reverb Delay",
-    "description": "El Mooer EchoVerb es un pedal de Reverb y Delay Digital de alta calidad en un formato micro, adipisicing elit. Incidunt autem necessitatibus voluptatum corrupti tenetur provident est, blanditiis eligendi dolores esse magnam, repellendus ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "El EchoVerb combina una reverb de alta calidad y un delay digital en un pedal pequeño. Cualquiera de los dos efectos se puede usar solo o simultáneamente. Los controles versátiles permiten al usuario setear fácilmente el EchoVerb para usarlo en una gran cantidad de formas diferentes, ya sea una mejora ambiental sutil o intensos efectos especiales procesados. El delay viene completo con Tap Tempo, que se puede operar a través del footswitch o con el pequeño botón LED en el centro del pedal.",
     "liked": "false"
   },
 {
@@ -77,7 +77,7 @@
     "name": "Faux",
     "img": "assets/img/wampler-faux-tape-echo-v23-1_300-8.jpg",
     "type": "Tape Echo",
-    "description": "Lorem ipsum dolor tape echo wampler sit amet consectetur, adipisicing elit. Incidunt autem necessitatibus voluptatum corrupti tenetur provident est, blanditiis eligendi dolores esse magnam, repellendus ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "El Faux Tape Echo incorpora todo lo que deseas de un pedal de delay estándar en el mejor empaque. Esta versión ofrece la misma pureza de la trayectoria de señal, la misma profundidad de sonido en las repeticiones y lo más importante, la adición de subdivisiones en el tap tempo. Con esto, ahora tus delays podrán venir en negras, corcheas, corcheas con puntillo y tresillo, basados en tu tap tempo.",
     "liked": "false"
   },
 {
@@ -87,7 +87,7 @@
     "name": "Equator",
     "img": "assets/img/wampler-equator-co45h92A_300-9.jpg",
     "type": "Eq",
-    "description": "Lorem ipsum dolor equalizador wampler sit amet consectetur, adipisicing elit. Incidunt autem necessitatibus voluptatum corrupti tenetur provident est, blanditiis eligendi dolores esse magnam, repellendus ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "Como un clásico 4-Band EQ, el Wampler EQuator es una poderosa herramienta en tu pedalera. Este efecto ofrece la posibilidad de reducir los graves y agudos no deseados o de dar a los amplificadores con sonido apagado un poco más de brillo de los agudos, mientras que los controles semiparamétricos de gama media en el rango de 238Hz a 5kHz se pueden utilizar como Booster o como amortiguadores. Por último, pero no menos importante, el control de volumen del Wampler EQuator tiene una cierta porción extra de salida para calentar la etapa de entrada del amplificador.",
     "liked": "false"
   },
 {
@@ -97,7 +97,7 @@
     "name": "Afinador",
     "img": "assets/img/mooer-afinador-de-pinza-ct-01-10.jpg",
     "type": "Afinador",
-    "description": "Una herramienta útil para cualquier músico o instrumentista. Este afinador Mooer es ideal para aquellos que se inician en el dominio de un instrunebto de cuerdas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt autem necessitatibus voluptatum corrupti tenetur provident est. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "Pedal afinador de alta precisión para guitarra acústica, eléctrica y bajo, incluidas guitarras de 7 cuerdas o bajos de 5 cuerdas. Display de gran luminosidad con hasta 108 LED’s que garantizan la visibilidad incluso en las peores condiciones de luminosidad. Pedal en formato Micro Series, con carcasa metálica y true bypass.",
     "liked": "false"
   },
 {
@@ -107,7 +107,7 @@
     "name": "Timmy",
     "img": "assets/img/mxr-timmy-overdrive-300x300-11.jpg",
     "type": "Overdrive",
-    "description": "Una herramienta útil para cualquier músico o instrumentista. Este overdrive MXR es ideal para aquellos que se inician en el dominio de un instrunebto de cuerdas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt autem necessitatibus voluptatum corrupti tenetur provident est. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "El MXR Timmy Overdrive proporciona una amplia gama de tonos roncos y texturizados que sin duda mejoran el sonido de tu setup dejando al mismo tiempo que tanto tu amplificador como tu guitarra preserven sus voces naturales, y al estar construido en una carcasa mini MXR, te ayudará a ahorrar espacio en tu pedalera. Los controles de Bass y Trebble ofrecen un mayor refinamiento de estos dos rangos de frecuencias claves en el sonido general de tu señal.",
     "liked": "false"
   },
 {
@@ -117,7 +117,7 @@
     "name": "Paraeq",
     "img": "assets/img/empress-perea-eq-300x300-12.jpg",
     "type": "Eq",
-    "description": "Una herramienta útil para cualquier músico o instrumentista. Este equalizador Empress es ideal para aquellos que se inician en el dominio de un instrunebto de cuerdas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt autem necessitatibus voluptatum corrupti tenetur provident est. Ipsum aperiam veritatis quidem porro nemo. Ipsam quis pariatur accusantium amet consequuntur.",
+    "description": "Whether you're trying to cut through a mix or fix a feedback issue, you need precision! The ParaEq MKII offers the most control of any pedal EQ on the market. Effortlessly sweeten your tone with beautiful sounding, super smooth Baxandall filters for broad high and low frequency shelving adjustments on the Deluxe. The ParaEq MKII pedals operates internally at 27V, providing clean headroom without unwanted clipping.",
     "liked": "false"
   }
 ]

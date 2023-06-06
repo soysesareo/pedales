@@ -69,28 +69,24 @@ const Dashboard = () => {
       <br />
       <div className="dashboardUsuarioProductos">
         <h5 style={{ color: "#A72C38" }}>Edita tus datos {/* {user.name} */}</h5>
-        <form onSubmit={handleSubmit} className="dashboardAgregarProductos needs-validation novalidate">
-        <div className="mb-3">
-          <label className="form-label">Clave</label>
-          <input type="text" className="form-control" placeholder='Password actual' /* value={password}  *//* onChange={e => setPassword(e.target.value)}  */required />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Nueva Clave</label>
-          <input type="text" className="form-control" placeholder='Nueva contraseña' /* value={newPassword} */ /* onChange={e => setNewPassword(e.target.value)} */ required />
-        </div>
-        
-        <button type="submit" className="dashboardBotonEnviar btn btn-secondary">Cambiar</button>
-      </form>
       </div>
+        
+        <form onSubmit={handleSubmit} className="dashboardAgregarProductos needs-validation novalidate">
+          <div className="mb-3">
+            <label className="form-label">Contraseña</label>
+            <input type="text" className="form-control" placeholder='Digite su contraseña actual' /* value={password}  *//* onChange={e => setPassword(e.target.value)}  */ required />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Nueva Contraseña</label>
+            <input type="text" className="form-control" placeholder='Digite su nueva contraseña' /* value={newPassword} */ /* onChange={e => setNewPassword(e.target.value)} */ required />
+          </div>
+          <button type="submit" className="dashboardBotonEnviar btn btn-secondary">Cambiar</button>
+        </form>
       <br /><br />
 
       <div className="dashboardUsuarioProductos">
         <h5 style={{ color: "#A72C38" }}>Agrega productos a la venta</h5>
       </div>
-
-      
-
-
 
       <form onSubmit={handleSubmit} className="dashboardAgregarProductos needs-validation novalidate">
         <div className="mb-3">
