@@ -22,6 +22,8 @@ const Home = () => {
     setPedalesFiltrados(pedales);
   }; */
 
+
+
   console.log(pedales);
 
 
@@ -96,7 +98,7 @@ const Home = () => {
                   <Link className="boton-comprar" to={`/compras `} >
                     <Button
                       variant="success"
-                      onClick={() => handleAddPedal(pedales)}
+                      onClick={() => addPedal(pedal)}
                     >Comprar</Button>
                   </Link>
                 </div>

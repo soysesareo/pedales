@@ -475,16 +475,19 @@ height: 100px;
 
 .compras-titulo {
   background-color: #97A35C;
+  padding-bottom: 3%;
 }
 
-.compras-tarjeta {
-  display: grid;
+.compras .compras-tarjeta {
+  display: flex;
   grid-template-rows: auto;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  gap: 12px;
-  color: #A72C38
+  gap: 0.4%;
+  color: #A72C38;
+  margin-top: 2%;
 }
+
 
 /* Fin Componente Compras */
 

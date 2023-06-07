@@ -12,7 +12,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 const Navegacion = () => {
 
-  const { user, favorites } = useProductContext(ProductContext);
+  const { user, favorites, compras } = useProductContext(ProductContext);
 
 
   return (
@@ -63,7 +63,7 @@ const Navegacion = () => {
                     <Nav.Link >Mi Tablero</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/compras">
-                    <Nav.Link >Mis Compras<Image className="nav-cart" /* src="/cart-4-svgrepo-com.svg" */ fluid rounded /></Nav.Link>
+                    <Nav.Link >Carrito ({compras.length}) <Image className="nav-cart" /* src="/cart-4-svgrepo-com.svg" */ fluid rounded /></Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/logout">
                     <Nav.Link >Hola {user && user.name}<Image className="nav-user" src="/logout-299x-299-svgrepo-com.svg" fluid rounded /></Nav.Link>

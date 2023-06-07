@@ -61,11 +61,7 @@ export default function ProductProvider({ children }) {
   const [busqueda, setBusqueda] = useState("");
 
 
-
-
   /* No utilicé localStorage, así que reemplacé el logout */
-  /* const logout = () => { }; */
-
 
   /* hook para busqueda */
   const [pedales, setPedales] = useState([]);
@@ -81,16 +77,17 @@ export default function ProductProvider({ children }) {
 
   /* Implementacion Carrito */
   const [compras, setCompras] = useState([
-    {
-      /* brand: "Boss", */
+    /* {
       price: "$49990",
       name: "DS-111",
-    }
+    } */
   ]);
 
-  const addPedal = (pedales) => {
-    setCompras([...compras, pedales])
+  const addPedal = (pedal) => {
+    setCompras([...compras, pedal])
   }
+
+
 
   const [usuariosFiltrados, setUsuariosFiltrados] = ([]);
   const [search, setSearch] = ("");
@@ -191,7 +188,7 @@ export default function ProductProvider({ children }) {
         })
         setPedales([...pedales]);
         break;
-        console.log(`Sorry, we are out of ${e}.`);
+        /* console.log(`Sorry, we are out of ${e}.`); */
     }
   }
 

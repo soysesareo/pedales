@@ -6,7 +6,7 @@ import { ProductContext, useProductContext } from '../context/ProductContext'
 
 const Compras = () => {
 
-  const { compras } = useProductContext(ProductContext);
+  const { compras, setCompras, addPedal } = useProductContext(ProductContext);
   console.log(compras);
 
 
@@ -14,29 +14,29 @@ const Compras = () => {
   return (
     <div>
       <div className="compras">
-        <h5 className="compras-titulo">Éstas son tus compras</h5>
+        <h5 className="compras-titulo">Éste es tu carro de compras</h5>
         {/* <p>Acá están tus compras</p> */}
-        <div className="compras-tarjeta">
+        <div /* className="compras-tarjeta" */>
           {
-            compras.map((compra, id) => (
-              <div key={id}>
-                <img height={"85px"} src={compra.img} alt={compra.name} />
-                <h6>Marca {compra.brand}</h6>
-                <h6>Nombre {compra.name}</h6>
-                <div>
-                  <h6>Precio {compra.price}</h6>
-                </div>
+            compras.map((pedal, id) => (
+              <div className="compras-tarjeta" key={id}>
+                <img height={"185px"} src={pedal.img} alt={pedal.name} />
+                <h6>{pedal.brand}</h6>
+                <h6>{pedal.name}</h6>
+                <h6>${pedal.price}</h6>
               </div>
             ))
           }
+          {compras.length === 0 && <h6 style={{ color: '#A72C38', textAlign: 'center' }}></h6>}
         </div>
         {/*  <Link to="/"><Button>Inicio</Button></Link> */}
-        <Link className="logout-boton" to={`/Login `} >
+        <br /><br />
+        <Link className="logout-boton" /* to={`/Login `} */ >
           <Button
             variant="secondary"
             value="Reload Page"
-            onClick="window.location.reload(true)"
-          >Cerrar Sesión</Button>
+          /* onClick="window.location.reload(true)" */
+          >Pagar</Button>
         </Link>
         <br />
       </div>
