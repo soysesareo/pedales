@@ -258,6 +258,7 @@ align-items: center;
 .favoritos {
   background-color: #97A35C;
   padding-bottom: 2.5%;
+  min-height: 70vh
 }
 
 .favoritos-tarjetas {
@@ -302,6 +303,7 @@ align-items: center;
   padding: 2% 15% 3% 15%;
   background-color: #97A35C;
   max-width: 100%;
+  min-height: 70vh
 }
 
 /* Fin Componente Contacto */
