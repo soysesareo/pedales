@@ -378,6 +378,7 @@ height: 100px;
 .login {
   padding: 2% 15% 3% 15%;
   background-color: #97A35C;
+  min-height: 70vh
 }
 
 .login-texto {
